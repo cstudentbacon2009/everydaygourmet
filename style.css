@@ -66,6 +66,46 @@ nav h1 {
 .nav-links a:hover {
   color: var(--accent);
 }
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px #ccc;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 
 /* Group nav links and search bar side by side */
 .nav-main {
@@ -185,7 +225,7 @@ nav h1 {
   background-color: #f9f9f5; /* soft cream tone */
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 2px 8px #f2f2f2; /* Approximate for rgba(0, 0, 0, 0.05) */
+  box-shadow: 0 2px 8px #f2f2f2; 
 }
 
 .kitchen-staples ul {
@@ -241,6 +281,43 @@ nav h1 {
   }
 }
 
+/* Table wrapper for horizontal scroll on mobile */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+/* Base table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #e4e4e4;
+}
+
+thead {
+  background-color: var(--primary);
+  color: white;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  th, td {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+}
 
 
 /* Email Sign-Up Form */
