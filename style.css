@@ -156,6 +156,31 @@ nav h1 {
   padding: 2rem 1rem;
 }
 
+
+.homepage-bio {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #e4e4e4;
+  margin-top: 2rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.homepage-bio h2 {
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.homepage-bio p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+
+
 /* Kitchen Staples List Styles */
 .kitchen-staples {
   background-color: #f9f9f5; /* soft cream tone */
