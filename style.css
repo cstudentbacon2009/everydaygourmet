@@ -123,7 +123,14 @@ nav h1 {
   border-radius: 8px;
   max-width: 500px;
 }
-
+/* Nestled photo */
+.ciara-photo {
+  display: block;
+  margin: 2rem auto;
+  width: 240px;
+  border: 6px solid var(--background);
+  box-shadow: 0 4px 10px #cccccc;
+}
 .cta-button {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
@@ -138,15 +145,6 @@ nav h1 {
 .cta-button:hover {
   background-color: var(--accent);
   color: var(--text);
-}
-
-/* Nestled photo */
-.ciara-photo {
-  display: block;
-  margin: 2rem auto;
-  width: 240px;
-  border: 6px solid var(--background);
-  box-shadow: 0 4px 10px #cccccc;
 }
 
 /* Page wrapper */
@@ -174,9 +172,10 @@ nav h1 {
   text-align: center;
 }
 
-.homepage-bio p {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
+.homepage-bio {
+  font-size: 1rem;
+  line-height: 1.65;
+  padding: 1.5rem;
 }
 
 
@@ -311,4 +310,69 @@ nav h1 {
 .signup-form textarea {
   min-height: 100px;
   resize: vertical;
+}
+
+
+/* ========== MOBILE STYLES ========== */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1.25rem;
+  }
+
+  /* Hero Section */
+  #hero {
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .ciara-photo {
+    width: 180px;
+    margin: 1.5rem auto;
+  }
+
+  /* Navigation */
+  .nav-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .search-form {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-form input,
+  .search-form button {
+    width: 100%;
+  }
+
+  /* Homepage Bio */
+  .homepage-bio h2 {
+    font-size: 1.5rem;
+  }
+
+  .homepage-bio p {
+    font-size: 1rem;
+  }
+
+  /* CTA button inside hero */
+  .cta-button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+  }
 }
