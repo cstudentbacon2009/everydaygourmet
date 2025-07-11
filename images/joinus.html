@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join the Everyday Gourmet with Ciara mailing list for updates when new seasonal recipes drop!">
+  <title>Everyday Gourmet with Ciara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="site-branding">
+        <img src="images/EverydayGourmetCiaraLogo.png" alt="Chef Ciara logo" class="site-logo" />
+        <h1>Everyday Gourmet with Ciara</h1>
+      </div>
+     <div class="nav-main">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="summermealplan.html">Recipes</a>
+        <ul class="dropdown-menu">
+    <li><a href="summerrecipes-breakfast.html">Breakfasts</a></li>
+    <li><a href="recipes-lunch.html">Lunches</a></li>
+    <li><a href="summerrecipes-dinner.html">Dinners</a></li>
+  </ul>
+</li>
+
+      <li><a href="kitchenstaples.html">Kitchen Staples</a></li>
+      <li><a href="joinus.html">Join Us</a></li>
+    </ul>
+
+    <!--Search bar -->
+    <form class="search-form">
+      <input type="text" placeholder="Search recipes..." />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  </header>
+
+<!-- Join Us Email Form --->
+<section class="signup-section">
+  <h2>Everyday Gourmet Quarterly Newsletter</h2>
+  <p>Join our newsletter to get updates when new seasonal recipes post!<br>
+     <small><em>Required fields marked with an asterisk *</em></small></p>
+
+  <form class="signup-form" method="post" action="https://webdevbasics.net/scripts/pacific.php">
+    <label for="myFName">* First Name:</label>
+    <input type="text" id="myFName" name="myFName" required>
+
+    <label for="myLName">* Last Name:</label>
+    <input type="text" id="myLName" name="myLName" required>
+
+    <label for="myEmail">* Email Address:</label>
+    <input type="email" id="myEmail" name="myEmail" required>
+
+    <label for="myState">State (2-letter):</label>
+    <input type="text" id="myState" name="myState" required maxlength="2" pattern="[A-Za-z]{2}" title="Enter 2-letter state abbreviation (e.g., AZ)" oninput="this.value = this.value.toUpperCase()">
+
+    <label for="myComments">Comments:</label>
+    <textarea id="myComments" name="myComments" rows="4" placeholder="Let us know your favorite seasonal dish!"></textarea>
+  
+    <input type="submit" value="Subscribe">
+  </form>
+</section>
+
+
+</body>
+</html>
