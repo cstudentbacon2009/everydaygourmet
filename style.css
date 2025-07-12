@@ -79,7 +79,7 @@ nav h1 {
   padding: 0.5rem 0;
   margin: 0;
   border-radius: 6px;
-  box-shadow: 0 4px 10px #ccc;
+  box-shadow: 0 4px 10px #cccccc;
   z-index: 1000;
 }
 
@@ -90,7 +90,7 @@ nav h1 {
 .dropdown-menu a {
   display: block;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: normal;
   white-space: nowrap;
@@ -98,7 +98,7 @@ nav h1 {
 
 .dropdown-menu a:hover {
   background-color: var(--secondary);
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Show dropdown on hover */
@@ -263,7 +263,7 @@ nav h1 {
   margin: 2rem auto;
   max-width: 700px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
 }
 
 .recipe + .recipe {
@@ -337,15 +337,16 @@ nav h1 {
 
 /* Table wrapper for horizontal scroll on mobile */
 .table-wrapper {
-  overflow-x: auto;
+  overflow-x: auto ;
   margin-top: 1rem;
 }
 
 /* Base table styles */
 table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
-  background-color: #fff;
+  background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px #e4e4e4;
 }
@@ -405,7 +406,7 @@ tr:last-child td {
 .signup-form input[type="email"] {
   padding: 0.75rem;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   font-size: 1rem;
 }
 
@@ -432,7 +433,7 @@ tr:last-child td {
 .signup-form textarea {
   padding: 0.75rem;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   font-size: 1rem;
   width: 100%;
   box-sizing: border-box;
@@ -441,6 +442,25 @@ tr:last-child td {
 .signup-form textarea {
   min-height: 100px;
   resize: vertical;
+}
+
+.site-footer {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  border-top: 4px solid var(--accent);
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
 }
 
 
